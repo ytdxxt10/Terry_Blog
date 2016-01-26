@@ -12,8 +12,9 @@ Terry's Blog
 -->
 <!--### 使用方法
 -->
-####博客末班fork自[StrayBirds](https://github.com/minixalpha/StrayBirds) 
+####博客模板fork自[StrayBirds](https://github.com/minixalpha/StrayBirds) 
 ####感谢[xkz](https://github.com/minixalpha)
+####[原博客](http://blog.csdn.net/see_you_in_the_past)
 <!--1. 注册 GitHub，得到用户名，例如 minixbeta
 2. 到 [StrayBirds](https://github.com/minixalpha/StrayBirds) 页面，单击右上
 角的 Fork
