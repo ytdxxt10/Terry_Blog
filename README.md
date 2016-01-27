@@ -14,6 +14,7 @@ Terry's Blog
 -->
 ####博客模板fork自[StrayBirds](https://github.com/minixalpha/StrayBirds) 
 ####感谢[xkz](https://github.com/minixalpha)
+####[博客](http://ytdxxt10.github.io/Terry_Blog/)
 ####[原博客](http://blog.csdn.net/see_you_in_the_past)
 <!--1. 注册 GitHub，得到用户名，例如 minixbeta
 2. 到 [StrayBirds](https://github.com/minixalpha/StrayBirds) 页面，单击右上
