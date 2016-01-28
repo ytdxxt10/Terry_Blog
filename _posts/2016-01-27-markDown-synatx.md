@@ -4,9 +4,10 @@ title: Markdown语法
 category: 技术
 comments: true
 ---
-
-
 ## markdown语法简介
+
+
+###类ATX语法
 ### Headers(标题)
 ```
 # H1 
@@ -21,6 +22,7 @@ comments: true
 #### H4
 ###### H6
 
+###类Setext语法
 Alternatively, for H1 and H2, an underline-ish style:
 ```
 Alt-H1
@@ -56,9 +58,9 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ###Lists(列表)
 ```
 #####无序列表
-- 文本1
-- 文本 2
-- Another item
++ 文本1
++ 文本 2
++ Another item
 
 #####有序列表
 1.文本1
@@ -81,32 +83,109 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 + Or pluses
 ```
 #####无序列表
-- 文本1
-- 文本 2
-- Another item
+无序列表使用星号、加号或者减号作为列表标记
+
++ 文本1
++ 文本 2
++ Another item
 
 #####有序列表
 1.文本1
 2.文本2
 3.文本3
 
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
+```
+如果列表项目间用空行分开，在输出 HTML 时 Markdown 就会将项目内容用 <p> 标签包起来，举例来说：
 
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
+*   Bird
+*   Magic
+会被转换为：
 
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
+<ul>
+<li>Bird</li>
+<li>Magic</li>
+</ul>
+但是这个：
+
+*   Bird
+
+*   Magic
+会被转换为：
+
+<ul>
+<li><p>Bird</p></li>
+<li><p>Magic</p></li>
+</ul>
+```
+列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：
+
+1.  This is a list item with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+
+    Vestibulum enim wisi, viverra nec, fringilla in,laoreet vitae, risus. Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+
+2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+
+如果要在列表项目内放进引用，那 > 就需要缩进：
+```
+*   A list item with a blockquote:
+
+    > This is a blockquote
+    > inside a list item.
+```
+*   A list item with a blockquote:
+
+    > This is a blockquote
+    > inside a list item.
+
+如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符：
+```
+*   一列表项包含一个列表区块：
+
+        <代码写在这>
+```
+*   一列表项包含一个列表区块：
+
+        <代码写在这>
+要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以，例如，下面的输入：
+```
+这是一个普通段落：
+
+    这是一个代码区块。
+```
+这是一个普通段落：
+
+    这是一个代码区块。
 
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
 
+###分割线
 
-###Links(链接)
+你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线
+```
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+
+```
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+
+###Links(链接)分为行内式和参考是
 There are two ways to create links
 
 ```
@@ -222,13 +301,31 @@ Markdown | Less | Pretty
 1 | 2 | 3
 
 ###Blockquotes(引用)
+####Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 > 
 
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
 
-Quote break.
+也可以再段首加上>Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote. 
+
+区块引用也可以嵌套
+> This is the first level of quoting
+> 
+> > This is nested blockquote
+> 
+> > Back to the first level
+
+引用的区块内也可以使用其它的Markdown语法，包括标题、列表、代码区块等
+> ## 这是一个标题。
+> 
+> 1.   这是第一行列表项。
+> 2.   这是第二行列表项。
+> 
+> 给出一些例子代码：
+> 
+>     return shell_exec("echo $input |$markdown_script");
 
 ###Inline HTML
 
