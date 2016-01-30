@@ -4,11 +4,12 @@ title: Markdown语法
 category: 技术
 comments: true
 ---
-## markdown语法简介
 
+## markdown语法简介
 
 ###类ATX语法
 ### Headers(标题)
+
 ```
 # H1 
 ## H2
@@ -163,16 +164,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ###分割线
 
 你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线
-```
-* * *
-
-***
-
-*****
-
-- - -
-
----------------------------------------
 
 ```
 * * *
@@ -184,29 +175,34 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - - -
 
 ---------------------------------------
+```
 
-###Links(链接)分为行内式和参考是
-There are two ways to create links
+* * *
+
+***
+
+*****
+
+- - -
+
+---------------------------------------
+
+
+###Links(链接)分为行内式和参考式
+
 
 ```
 [I'm an inline-style link](https://www.baidu.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
+```
+####参考式
+参考式的链接是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记：
 
+```
+This is [an example] [id] reference-style link.
 [You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
+[id]: http://example.com/  "Optional Title Here"
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
@@ -214,33 +210,46 @@ Some text to show that the reference links can follow later.
 ```
 [I'm an inline-style link](https://www.baidu.com)
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
-
+This is [an example] [id] reference-style link.
+[id]: http://example.com/  "Optional Title Here"
 [I'm a relative reference to a repository file](../blob/master/LICENSE)
-
 [You can use numbers for reference-style link definitions][1]
 
 Or leave it empty and use the [link text itself].
 
 URLs and URLs in angle brackets will automatically get turned into links. 
-http://www.example.com or <http://www.example.com> and sometimes 
-example.com (but not on Github, for example).
-
 Some text to show that the reference links can follow later.
 
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 [1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
 
+下面是参考式链接的范例
+```
+I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or [MSN] [3].
+
+  [1]: http://google.com/        "Google"
+  [2]: http://search.yahoo.com/  "Yahoo Search"
+  [3]: http://search.msn.com/    "MSN Search"
+  
+```
+I get 10 times more traffic from [Google] [1] than from
+[Yahoo] [2] or [MSN] [3].
+
+  [1]: http://google.com/        "Google"
+  [2]: http://search.yahoo.com/  "Yahoo Search"
+  [3]: http://search.msn.com/    "MSN Search"
+  
+  
 ###Images(图片)
-Here's our logo (hover to see the title text):
 
+####行内式
 Inline-style:
 ```
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
+####参考式
 Reference-style: 
 ![alt text][logo]
 
