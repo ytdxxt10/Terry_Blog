@@ -4,8 +4,8 @@ title: Markdown语法
 category: 技术
 comments: true
 ---
-
 ## markdown语法简介
+
 
 ###类ATX语法
 ### Headers(标题)
@@ -394,6 +394,9 @@ Or, in pure Markdown, but losing the image sizing and border:
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
-Referencing a bug by #bugID in your git commit links it to the slip. For example #1.
+
+###参考文章：
+[Markdown 语法说明](http://wowubuntu.com/markdown/)
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)	
 
 
