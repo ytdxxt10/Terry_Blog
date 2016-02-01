@@ -2,7 +2,9 @@
 
 当然首先你得有一个开发者账号。
 像这种
+
 ![distribution1](https://github.com/ytdxxt10/Terry_Blog/blob/gh-pages/blogImages/three.png)
+
 
 ##创建发布证书
 +首先先到上面那个界面点击
