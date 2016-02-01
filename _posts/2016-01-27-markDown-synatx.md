@@ -17,6 +17,7 @@ comments: true
 #### H4
 ###### H6
 ```
+
 # H1 
 ## H2
 ### H3
@@ -25,18 +26,21 @@ comments: true
 
 ###类Setext语法
 Alternatively, for H1 and H2, an underline-ish style:
+
 ```
 Alt-H1
 ======
 Alt-H2
 ------
 ```
+
 Alt-H1
 ======
 Alt-H2
 ------
 
 ###Emphasis(强调)
+
 ```
 用两个 * 包含一段文本就是粗体的语法，用一个 * 包含一段文本就是斜体的语法
 
@@ -57,6 +61,7 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 ###Lists(列表)
+
 ```
 #####无序列表
 + 文本1
