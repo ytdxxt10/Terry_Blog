@@ -3,7 +3,7 @@
 当然首先你得有一个开发者账号。
 像这种
 
-![distribution1](https://github.com/ytdxxt10/Terry_Blog/blob/gh-pages/blogImages/three.png)
+![](https://github.com/ytdxxt10/Terry_Blog/blob/gh-pages/blogImages/three.png)
 
 
 ##创建发布证书
