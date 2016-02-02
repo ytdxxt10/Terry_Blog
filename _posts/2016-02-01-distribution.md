@@ -25,7 +25,7 @@
 
 +继续点击continue，这里会要求你上传一个CSR文件。
 
-!(distribution5)()https://github.com/ytdxxt10/Terry_Blog/raw/gh-pages/blogImages/8.png)
+!(distribution5)(https://github.com/ytdxxt10/Terry_Blog/raw/gh-pages/blogImages/8.png)
 
 +这里打开钥匙串访问，点击左上角的钥匙串访问，证书处理，从证书颁发机构请求证书到达这里，然后填上上面的邮箱，下面选择存储到磁盘。点击继续，保存到一个路径中。
 
@@ -54,6 +54,7 @@
 
 ![distribution11](https://github.com/ytdxxt10/Terry_Blog/raw/gh-pages/blogImages/14.png)
 ![distribution12](https://github.com/ytdxxt10/Terry_Blog/raw/gh-pages/blogImages/15.png)
+
 按command+shift+k,清除下缓存。
 后选择product下面的Archive
 
