@@ -66,6 +66,7 @@ comments: true
 后选择product下面的Archive
 
 完成后，点击右侧的Upload to App Store选择你们公司或者个人账号。点击choose，如下，、
+![distribution12](https://github.com/ytdxxt10/Terry_Blog/raw/gh-pages/blogImages/enterprise1.png)
 
 点击upload即可上传。
 时间依网速而定，快则5min，满则失败重传n次。
