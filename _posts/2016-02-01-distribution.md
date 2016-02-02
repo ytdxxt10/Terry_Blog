@@ -1,3 +1,10 @@
+---
+layout: post
+title: iOS应用发布
+category: 技术
+comments: true
+---
+
 #iOS应用发布
 
 当然首先你得有一个开发者账号。
