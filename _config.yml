@@ -117,7 +117,7 @@ disqus:
 
 username: ytdxxt10
 baseurl: /Terry_Blog
-markdown: kramdown
+# markdown: kramdown
 safe: false
 highlighter: pygments
 title: 飞鸟集
