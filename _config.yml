@@ -117,9 +117,9 @@ disqus:
 
 username: ytdxxt10
 baseurl: /Terry_Blog
-markdown: kramdown
+markdown: Redcarpet
 safe: false
-highlighter: rouge
+highlighter: Pygments
 title: 飞鸟集
 description: 人生到处知何似，应似飞鸿踏雪泥
 theme: modernist
