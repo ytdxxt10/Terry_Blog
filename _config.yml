@@ -115,7 +115,7 @@ disqus:
 
 #################################### global configure #######################################
 
-username: ytdxxt10
+# username: ytdxxt10
 baseurl: /Terry_Blog
 markdown: Redcarpet
 safe: false
